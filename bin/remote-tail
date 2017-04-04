@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const
+    program = require('commander'),
+    Server = require('../lib/Server'),
+    Client = require('../lib/Client'),
+    version = require('../package.json').version,
+    defaultConfig = {
+        host: '127.0.0.1',
+        port: 1685
+    };
+
+program
+    .version(version)
+    .option('-e, --expose [file]', 'The file to expose to clients')
+    .option('-p, --port [val]', 'Port to be used')
+    .option('-h, --host [val]', 'Host to be used')
+    .option('-a, --allowed [val]', 'Comma separated list with allowed ip addresses/series for connecting clients')
+    .parse(process.argv);
+
+if (['help', '-help', '--help'].indexOf(process.argv.slice(-1)[0]) > -1) {
+  program.help();
+} else if (program.expose) {
+    Server.run(
+        program.expose,
+        program.host || defaultConfig.host,
+        program.port || defaultConfig.port,
+        program.allowed ? program.allowed.split(',') : []
+    );
+} else {
+    Client.run(
+        program.host || defaultConfig.host,
+        program.port || defaultConfig.port
+    );
+}

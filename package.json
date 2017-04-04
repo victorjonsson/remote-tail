@@ -1,0 +1,48 @@
+{
+  "name": "remote-tail",
+  "version": "1.0.6",
+  "description": "Server and client used for sharing of log files over TCP. Simple setup on the server and just as easy as `tail -f` on the clients.",
+  "engines": {
+    "node": ">=4.1.1"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "tail": "1.1.0",
+    "uniqid": "3.0.0"
+  },
+  "bin": {
+    "remote-tail": "./bin/remote-tail"
+  },
+  "author": {
+    "name": "Victor Jonsson",
+    "email": "kontakt@victorjonsson.se",
+    "url": "http://victorjonsson.se"
+  },
+  "license": "MIT",
+  "_id": "remote-tail@1.0.6",
+  "scripts": {},
+  "_shasum": "8ca0095e1288fb9d5d1678b554461e17494ba6aa",
+  "_from": "remote-tail@latest",
+  "_npmVersion": "2.14.12",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "victorjonsson",
+    "email": "kontakt@victorjonsson.se"
+  },
+  "dist": {
+    "shasum": "8ca0095e1288fb9d5d1678b554461e17494ba6aa",
+    "tarball": "https://registry.npmjs.org/remote-tail/-/remote-tail-1.0.6.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "victorjonsson",
+      "email": "kontakt@victorjonsson.se"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/remote-tail-1.0.6.tgz_1464645677217_0.8634708407334983"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/remote-tail/-/remote-tail-1.0.6.tgz"
+}
