@@ -1,6 +1,6 @@
 # remote-tail
 
-Server and client used for sharing log files over TCP. 
+Server and client used for sharing of log files over TCP. 
 Simple setup on the server and just as easy as `tail -f` on the clients.
 
 ##### Dependencies
