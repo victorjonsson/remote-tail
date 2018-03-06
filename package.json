@@ -1,6 +1,6 @@
 {
   "name": "remote-tail",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Server and client used for sharing of log files over TCP. Simple setup on the server and just as easy as `tail -f` on the clients.",
   "engines": {
     "node": ">=4.1.1"
